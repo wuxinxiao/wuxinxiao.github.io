@@ -415,18 +415,20 @@ a.btn:hover {
 }
 .skills-section .top-skills {
   margin-bottom: 30px;
+  max-width: 800px;
+  margin : auto;
 }
 .skills-section .top-skills .item {
   margin-bottom: 45px;
 }
 .skills-section .top-skills .content {
-  margin : 30px;
+  margin-top: 30px;
   text-align: left;
   padding-left: 10px;
   padding-right:10px;
 }
 .skills-section .top-skills .image {
-  margin : 30px;
+  margin-bottom: 30px;
   padding-left: 10px;
   padding-right: 10px;
 }
