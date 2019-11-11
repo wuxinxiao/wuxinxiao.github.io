@@ -107,6 +107,9 @@ a.btn:hover {
   color: #fff;
 }
 .header .top-bar {
+  background:url('../images/background.jpg');
+  background-size:100% 100%;
+  opacity: 0.9;
   position: relative;
   padding-top: 15px;
   padding-bottom: 120px;
@@ -157,6 +160,9 @@ a.btn:hover {
   height: 160px;
   top: -80px;
   margin-left: -80px;
+  border-radius:70%;
+  border:5px solid white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 .header .name {
   font-size: 48px;
@@ -491,16 +497,16 @@ a.btn:hover {
   position: relative;
 }
 .testimonials-section .quote .source .papername {
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 400;
 }
 .testimonials-section .quote .source .name {
-  font-size: 16px;
-  color: #444444;
+  font-size: 14px;
+  color: #8a8a8a;
 }
 .testimonials-section .quote .source .position {
   font-size: 16px;
-  color: #8a8a8a;
+  color: #444444;
 }
 .testimonials-section .fa-quote-left {
   position: absolute;
@@ -601,10 +607,20 @@ a.btn:hover {
   font-size: 16px;
   margin-top: 0;
   margin-bottom: 5px;
+  max-width: 300px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
 }
 .portfolio-section .item-inner .content .meta {
   color: rgba(255, 255, 255, 0.8);
   font-size: 14px;
+  max-width: 300px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap
 }
 .portfolio-section .item-inner .content .action {
   position: absolute;
@@ -619,9 +635,92 @@ a.btn:hover {
   left: 0;
   top: 0;
 }
+
+.group-section .filters {
+  list-style: none;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  text-align: center;
+  border-bottom: 1px solid #e8e8e8;
+}
+.group-section .filters .type {
+  margin-right: 30px;
+  list-style: none;
+  display: inline-block;
+  padding: 8px 15px;
+  color: #8a8a8a;
+  cursor: pointer;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.group-section .filters .type:last-child {
+  margin-right: 0;
+}
+.group-section .filters .type.active {
+  color: #00BCD4;
+  border-bottom: 2px solid #00BCD4;
+}
+.group-section .item {
+  margin-bottom: 30px;
+  padding: 30px;
+}
+.group-section .item-inner {
+  background: #fff;
+  color: #666;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  position: relative;
+  -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+  -moz-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+}
+.group-section .item-inner .content {
+  padding: 30px;
+  position: relative;
+}
+.group-section .item-inner .content a {
+  color: #fff;
+}
+.group-section .item-inner .content .sub-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #00BCD4;
+  margin-top: 0;
+  margin-bottom: 5px;
+  max-width: 300px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+.group-section .item-inner .content .meta {
+  color: #888;
+  font-size: 14px;
+  max-width: 300px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap
+}
+.group-section .item-inner .link-mask {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
 .contact-section .intro {
   position: relative;
-  padding-left: 400px;
+  padding-left: 350px;
   font-size: 16px;
   color: #666;
 }
@@ -758,6 +857,41 @@ a.btn:hover {
     position: static;
     font-size: 12px;
   }
+
+  .group-section .filters .type {
+    font-size: 12px;
+    margin-right: 5px;
+    padding: 8px 5px;
+  }
+  .group-section .item{
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  .group-section .item-inner .content {
+    padding: 15px;
+  }
+  .group-section .item-inner .content .sub-title {
+    font-size: 14px;
+    max-width: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .group-section .item-inner .content .meta {
+    font-size: 12px;
+    max-width: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .group-section .item-inner .content .action {
+    position: static;
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
   .contact-section .intro {
     padding: 0;
     text-align: center;
