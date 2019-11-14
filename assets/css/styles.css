@@ -681,8 +681,13 @@ a.btn:hover {
   -moz-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
 }
+.group-section .item-inner .figure {
+  padding: 20px;
+  position: relative;
+}
 .group-section .item-inner .content {
   padding: 30px;
+  padding-top: 10px;
   position: relative;
 }
 .group-section .item-inner .content a {
@@ -844,10 +849,12 @@ a.btn:hover {
     max-width: 120px;
     overflow: hidden;
     text-overflow: ellipsis;
-    white-space: nowrap;
+    display: -webkit-box;
+    -webkit-line-clamp: 8;
+    -webkit-box-orient: vertical;
   }
   .portfolio-section .item-inner .content .meta {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     max-width: 120px;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -867,8 +874,13 @@ a.btn:hover {
     margin-bottom: 10px;
     padding: 10px;
   }
+  .group-section .item-inner .figure {
+    padding: 10px;
+    position: relative;
+  }
   .group-section .item-inner .content {
     padding: 15px;
+    padding-top: 5px;
   }
   .group-section .item-inner .content .sub-title {
     font-size: 14px;
