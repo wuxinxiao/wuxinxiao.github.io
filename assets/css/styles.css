@@ -682,12 +682,12 @@ a.btn:hover {
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
 }
 .group-section .item-inner .figure {
-  padding: 20px;
+  padding: 15px;
   position: relative;
 }
 .group-section .item-inner .content {
-  padding: 30px;
-  padding-top: 10px;
+  padding: 10px;
+  padding-bottom: 30px;
   position: relative;
 }
 .group-section .item-inner .content a {
