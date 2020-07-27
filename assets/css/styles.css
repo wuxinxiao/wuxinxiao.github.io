@@ -738,6 +738,22 @@ a.btn:hover {
 .contact-section .intro p {
   margin-bottom: 0px;
 }
+
+.contact-section .news-intro {
+  position: relative;
+  font-size: 16px;
+  color: #666;
+}
+.contact-section .news-intro .profile-image {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  left: 200px;
+}
+.contact-section .news-intro p {
+  margin-bottom: 0px;
+}
+
 .contact-section .service-list {
   margin-left: 30px;
   margin-bottom: 15px;
