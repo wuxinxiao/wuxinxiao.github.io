@@ -761,6 +761,12 @@ a.btn:hover {
 .contact-section .service-list li {
   margin-bottom: 15px;
 }
+
+.contact-section .service-list li p {
+  display: inline;
+  color: #00BCD4;
+}
+
 .contact-section .service-list .fa {
   color: #00BCD4;
 }
