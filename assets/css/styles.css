@@ -594,7 +594,7 @@ a.btn:hover {
 }
 .portfolio-section .item-inner .content {
   padding: 30px;
-  padding-bottom: 75px;
+  padding-bottom: 55px;
   position: relative;
 }
 .portfolio-section .item-inner .content:hover {
@@ -602,6 +602,10 @@ a.btn:hover {
 }
 .portfolio-section .item-inner .content a {
   color: #fff;
+}
+.portfolio-section .item-inner .content a:hover {
+  color: #337ab7;
+  text-decoration: none;
 }
 .portfolio-section .item-inner .content .sub-title {
   font-size: 16px;
@@ -622,18 +626,16 @@ a.btn:hover {
   text-overflow: ellipsis;
   white-space: nowrap
 }
+.portfolio-section .item-inner .content .link {
+  margin-top: 5px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
 .portfolio-section .item-inner .content .action {
   position: absolute;
   bottom: 30px;
   left: 30px;
-}
-.portfolio-section .item-inner .link-mask {
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
 }
 
 .group-section .filters {
@@ -713,14 +715,6 @@ a.btn:hover {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap
-}
-.group-section .item-inner .link-mask {
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
 }
 
 .contact-section .intro {
@@ -866,6 +860,10 @@ a.btn:hover {
   .portfolio-section .item-inner .content {
     padding: 15px;
   }
+  .portfolio-section .item-inner .content a:hover {
+  color: #337ab7;
+  text-decoration: none;
+  }
   .portfolio-section .item-inner .content .sub-title {
     font-size: 14px;
     max-width: 120px;
@@ -876,7 +874,6 @@ a.btn:hover {
     -webkit-box-orient: vertical;
   }
   .portfolio-section .item-inner .content .meta {
-    margin-bottom: 20px;
     max-width: 120px;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -886,6 +883,7 @@ a.btn:hover {
     position: static;
     font-size: 12px;
   }
+
 
   .group-section .filters .type {
     font-size: 12px;
