@@ -604,7 +604,6 @@ a.btn:hover {
   color: #fff;
 }
 .portfolio-section .item-inner .content a:hover {
-  color: #337ab7;
   text-decoration: none;
 }
 .portfolio-section .item-inner .content .sub-title {
@@ -631,11 +630,15 @@ a.btn:hover {
   font-size: 14px;
   font-weight: 500;
 }
-
+.portfolio-section .item-inner .content .link a{
+  color: rgba(177, 19, 51, 0.8);
+}
+.portfolio-section .item-inner .content .link a:hover{
+  color: #fff;
+  text-decoration: none;
+}
 .portfolio-section .item-inner .content .action {
-  position: absolute;
-  bottom: 30px;
-  left: 30px;
+  margin-top: 5px;
 }
 
 .group-section .filters {
@@ -861,7 +864,6 @@ a.btn:hover {
     padding: 15px;
   }
   .portfolio-section .item-inner .content a:hover {
-  color: #337ab7;
   text-decoration: none;
   }
   .portfolio-section .item-inner .content .sub-title {
