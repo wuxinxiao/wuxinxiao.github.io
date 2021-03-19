@@ -274,7 +274,15 @@ $(document).ready(function() {
             pages     = {online},\n\
             publisher = {{AAAI} Press},\n\
             year      = {2021},\n\
-         }"
+         }",
+        "24":"@inproceedings{chen2021spatial,\n\
+          author    = {Jin Chen and Xinxiao Wu and Yao Hu and Jiebo Luo},\n\
+          title     = {Spatial-temporal Causal Inference for Partial Image-to-video Adaptation},\n\
+          booktitle = {The Thirty-Fifth {AAAI} Conference on Artificial Intelligence, {AAAI} 2021},\n\
+          pages     = {online},\n\
+          publisher = {{AAAI} Press},\n\
+          year      = {2021},\n\
+        }" 
         };
 
         var cite = $(event.relatedTarget); // Button that triggered the modal
