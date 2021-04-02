@@ -273,7 +273,7 @@ $(document).ready(function() {
             booktitle = {The Thirty-Fifth {AAAI} Conference on Artificial Intelligence, {AAAI} 2021},\n\
             pages     = {online},\n\
             publisher = {{AAAI} Press},\n\
-            year      = {2021},\n\
+            year      = {2021}\n\
          }",
         "24":"@inproceedings{chen2021spatial,\n\
           author    = {Jin Chen and Xinxiao Wu and Yao Hu and Jiebo Luo},\n\
@@ -281,8 +281,17 @@ $(document).ready(function() {
           booktitle = {The Thirty-Fifth {AAAI} Conference on Artificial Intelligence, {AAAI} 2021},\n\
           pages     = {online},\n\
           publisher = {{AAAI} Press},\n\
-          year      = {2021},\n\
-        }" 
+          year      = {2021}\n\
+        }",
+        "25":"@article{zhao@cross,\n\
+          author={Wentian Zhao and Xinxiao Wu and Jiebo Luo},\n\
+          title={Cross-Domain Image Captioning via Cross-Modal Retrieval and Model Adaptation}, \n\
+          journal={IEEE Transactions on Image Processing}, \n\
+          year={2021},\n\
+          volume={30},\n\
+          pages={1180-1192},\n\
+          publisher={IEEE}\n\
+        }"  
         };
 
         var cite = $(event.relatedTarget); // Button that triggered the modal
