@@ -291,7 +291,14 @@ $(document).ready(function() {
           volume={30},\n\
           pages={1180-1192},\n\
           publisher={IEEE}\n\
-        }"  
+        }",
+        "26":"@inproceedings{li2021image,\n\
+          title={Image Captioning with Inherent Sentiment},\n\
+          author={Li, Tong and Hu, Yunhui and Wu, Xinxiao},\n\
+          booktitle={2021 IEEE International Conference on Multimedia and Expo (ICME)},\n\
+          year={2021},\n\
+          organization={IEEE}\n\
+        }"
         };
 
         var cite = $(event.relatedTarget); // Button that triggered the modal
