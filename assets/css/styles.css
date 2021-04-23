@@ -108,10 +108,10 @@ a.btn:hover {
 }
 .header .top-bar {
   background:url('../images/background.jpg');
-  background-size:100% 100%;
+  background-size: 100% 100%;
   opacity: 0.9;
   position: relative;
-  padding-top: 15px;
+  padding-top: 100px;
   padding-bottom: 120px;
 }
 .header .social {
@@ -576,69 +576,74 @@ a.btn:hover {
 .portfolio-section .item {
   margin-bottom: 30px;
 }
-.portfolio-section .item-inner {
-  background: #00BCD4;
-  color: #fff;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  -ms-border-radius: 2px;
-  -o-border-radius: 2px;
-  border-radius: 2px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  position: relative;
-  -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
-  -moz-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
-  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
-}
-.portfolio-section .item-inner .content {
-  padding: 30px;
-  padding-bottom: 55px;
-  position: relative;
-}
-.portfolio-section .item-inner .content:hover {
-  background: #00c5de;
-}
-.portfolio-section .item-inner .content a {
-  color: #fff;
-}
-.portfolio-section .item-inner .content a:hover {
-  text-decoration: none;
-}
-.portfolio-section .item-inner .content .sub-title {
-  font-size: 16px;
-  margin-top: 0;
-  margin-bottom: 5px;
-  max-width: 300px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
-}
-.portfolio-section .item-inner .content .meta {
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 14px;
-  max-width: 300px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap
-}
-.portfolio-section .item-inner .content .link {
-  margin-top: 5px;
-  font-size: 14px;
-  font-weight: 500;
-}
-.portfolio-section .item-inner .content .link a{
-  color: rgba(177, 19, 51, 0.8);
-}
-.portfolio-section .item-inner .content .link a:hover{
-  color: #fff;
-  text-decoration: none;
-}
-.portfolio-section .item-inner .content .action {
-  margin-top: 5px;
+@media (min-width: 768px) {
+  .portfolio-section .item-inner {
+    height: 135px;
+    background: #00BCD4;
+    color: #fff;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    position: relative;
+    -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+    -moz-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+  }
+  .portfolio-section .item-inner .figure {
+    width: 240px;
+    height: 135px;
+    position: absolute;
+    left: 0px;
+  }
+  .portfolio-section .item-inner .content {
+    height: 135px;
+    padding: 30px;
+    padding-top: 5px;
+    position: absolute;
+    left: 240px;
+    right: 0px;
+  }
+  .portfolio-section .item-inner .content:hover {
+    background: #00c5de;
+  }
+  .portfolio-section .item-inner .content a {
+    color: #fff;
+  }
+  .portfolio-section .item-inner .content a:hover {
+    text-decoration: none;
+  }
+  .portfolio-section .item-inner .content .sub-title {
+    font-size: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+  }
+  .portfolio-section .item-inner .content .meta {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+  }
+
+  .portfolio-section .item-inner .content .link {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .portfolio-section .item-inner .content .link a{
+    color: #9e191f;
+  }
+  .portfolio-section .item-inner .content .link a:hover{
+    color: #fff;
+    text-decoration: none;
+  }
 }
 
 .group-section .filters {
@@ -719,6 +724,88 @@ a.btn:hover {
   text-overflow: ellipsis;
   white-space: nowrap
 }
+
+.alumni-section .filters {
+  list-style: none;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  text-align: center;
+  border-bottom: 1px solid #e8e8e8;
+}
+.alumni-section .filters .type {
+  margin-right: 30px;
+  list-style: none;
+  display: inline-block;
+  padding: 8px 15px;
+  color: #8a8a8a;
+  cursor: pointer;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.alumni-section .filters .type:last-child {
+  margin-right: 0;
+}
+.alumni-section .filters .type.active {
+  color: #00BCD4;
+  border-bottom: 2px solid #00BCD4;
+}
+.alumni-section .item {
+  padding: 10px;
+}
+.alumni-section .item-inner {
+  padding: 10px;
+  background: #fff;
+  color: #666;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  position: relative;
+  -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+  -moz-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+  overflow: hidden;
+}
+.alumni-section .item-inner .content {
+  position: relative;
+  overflow: hidden;
+}
+.alumni-section .item-inner .content .sub-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #00BCD4;
+  width: 30%;
+  margin-left: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  float: left;
+}
+.alumni-section .item-inner .content .meta {
+  color: #888;
+  font-size: 18px;
+  margin-left: 10px;
+  min-width: 100px;
+  width: 30%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  float: left;
+}
+.alumni-section .item-inner .content .action {
+  font-size: 18px;
+  margin-left: 10px;
+  width: 30%;
+  float: left;
+}
+
 
 .contact-section .intro {
   position: relative;
@@ -860,15 +947,41 @@ a.btn:hover {
     margin-right: 5px;
     padding: 8px 5px;
   }
+  .portfolio-section .item-inner {
+    background: #00BCD4;
+    color: #fff;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    position: relative;
+    -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+    -moz-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+  }
   .portfolio-section .item-inner .content {
-    padding: 15px;
+    padding: 30px;
+    padding-bottom: 55px;
+    position: relative;
+  }
+  .portfolio-section .item-inner .content:hover {
+    background: #00c5de;
+  }
+  .portfolio-section .item-inner .content a {
+    color: #fff;
   }
   .portfolio-section .item-inner .content a:hover {
-  text-decoration: none;
+    text-decoration: none;
   }
   .portfolio-section .item-inner .content .sub-title {
-    font-size: 14px;
-    max-width: 120px;
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 5px;
+    max-width: 300px;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -876,14 +989,27 @@ a.btn:hover {
     -webkit-box-orient: vertical;
   }
   .portfolio-section .item-inner .content .meta {
-    max-width: 120px;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 14px;
+    max-width: 300px;
     overflow: hidden;
     text-overflow: ellipsis;
-    white-space: nowrap;
+    white-space: nowrap
+  }
+  .portfolio-section .item-inner .content .link {
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .portfolio-section .item-inner .content .link a{
+    color: rgba(177, 19, 51, 0.8);
+  }
+  .portfolio-section .item-inner .content .link a:hover{
+    color: #fff;
+    text-decoration: none;
   }
   .portfolio-section .item-inner .content .action {
-    position: static;
-    font-size: 12px;
+    margin-top: 5px;
   }
 
 
@@ -924,6 +1050,55 @@ a.btn:hover {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+  }
+
+  .alumni-section .item-inner {
+    padding: 10px;
+    background: #fff;
+    color: #666;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    position: relative;
+    -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+    -moz-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+  }
+  .alumni-section .item-inner .content {
+    position: relative;
+  }
+  .alumni-section .item-inner .content .sub-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #00BCD4;
+    width: 100%;
+    margin-left: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    float: top;
+  }
+  .alumni-section .item-inner .content .meta {
+    color: #888;
+    font-size: 18px;
+    margin-left: 10px;
+    min-width: 100px;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .alumni-section .item-inner .content .action {
+    font-size: 18px;
+    margin-left: 10px;
+    width: 100%;
   }
 
   .contact-section .intro {
