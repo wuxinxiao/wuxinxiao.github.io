@@ -111,7 +111,7 @@ a.btn:hover {
   background-size: 100% 100%;
   opacity: 0.9;
   position: relative;
-  padding-top: 100px;
+  padding-top: 20px;
   padding-bottom: 120px;
 }
 .header .social {
@@ -155,11 +155,10 @@ a.btn:hover {
   margin-right: 0;
 }
 .header .profile-image {
-  position: absolute;
-  width: 160px;
-  height: 160px;
-  top: -80px;
-  margin-left: -80px;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  /* margin-top: -100px; */
   border-radius:70%;
   border:5px solid white;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
@@ -177,7 +176,7 @@ a.btn:hover {
 }
 .header .intro {
   background: #00a5bb;
-  padding-top: 90px;
+  padding-top: 20px;
   padding-bottom: 60px;
   position: relative;
   font-size: 16px;
@@ -753,7 +752,7 @@ a.btn:hover {
 .alumni-section .item {
   padding: 10px;
 }
-.alumni-section .item-inner {
+/* .alumni-section .item-inner {
   padding: 10px;
   background: #fff;
   color: #666;
@@ -770,7 +769,7 @@ a.btn:hover {
   -moz-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
   overflow: hidden;
-}
+} */
 .alumni-section .item-inner .content {
   position: relative;
   overflow: hidden;
@@ -882,6 +881,14 @@ a.btn:hover {
 }
 /* Extra small devices (phones, less than 768px) */
 @media (max-width: 767px) {
+  .header .top-bar {
+    background:url('../images/background_phone.jpg');
+    background-size:cover;
+    opacity: 0.9;
+    position: relative;
+    padding-top: 1px;
+    padding-bottom: 120px;
+  }
   .header .social {
     margin: 0 auto;
     text-align: center;
