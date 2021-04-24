@@ -100,19 +100,24 @@ a.btn:hover {
   font-weight: normal;
 }
 .header {
-  background: #00BCD4;
+  background:#00a5bb;
   color: #fff;
 }
 .header a {
   color: #fff;
 }
 .header .top-bar {
-  background:url('../images/background.jpg');
-  background-size: 100% 100%;
+  /* background:url('../images/background.jpg');
+  background-size: 100%,auto;
+  background-repeat: no-repeat; */
   opacity: 0.9;
   position: relative;
-  padding-top: 20px;
-  padding-bottom: 120px;
+  padding: 0px;
+}
+.header .background{
+  width: 100%;
+  height: auto;
+  content: url('../images/background.jpg');
 }
 .header .social {
   margin-bottom: 0;
@@ -778,6 +783,7 @@ a.btn:hover {
   font-size: 18px;
   font-weight: bold;
   color: #00BCD4;
+  padding: auto;
   width: 30%;
   margin-left: 10px;
   overflow: hidden;
@@ -882,12 +888,14 @@ a.btn:hover {
 /* Extra small devices (phones, less than 768px) */
 @media (max-width: 767px) {
   .header .top-bar {
-    background:url('../images/background_phone.jpg');
-    background-size:cover;
     opacity: 0.9;
     position: relative;
-    padding-top: 1px;
-    padding-bottom: 120px;
+    padding: 0px;
+  }
+  .header .background{
+    width: 100%;
+    height: auto;
+    content: url('../images/background_phone.jpg');
   }
   .header .social {
     margin: 0 auto;
