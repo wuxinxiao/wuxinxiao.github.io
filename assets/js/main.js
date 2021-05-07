@@ -298,6 +298,15 @@ $(document).ready(function() {
           booktitle={2021 IEEE International Conference on Multimedia and Expo (ICME)},\n\
           year={2021},\n\
           organization={IEEE}\n\
+        }",
+        "27":"@article{chen2021sequential, \n\
+          title={Sequential Instance Refinement for Cross-Domain Object Detection in Images}, \n\
+          author={Chen, Jin and Wu, Xinxiao and Duan, Lixin and Chen, Lin}, \n\
+          journal={IEEE Transactions on Image Processing}, \n\
+          volume={30}, \n\
+          pages={3970--3984}, \n\
+          year={2021}, \n\
+          publisher={IEEE} \n\
         }"
         };
 
