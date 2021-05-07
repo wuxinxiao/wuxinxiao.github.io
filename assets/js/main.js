@@ -283,9 +283,9 @@ $(document).ready(function() {
           publisher = {{AAAI} Press},\n\
           year      = {2021}\n\
         }",
-        "25":"@article{zhao@cross,\n\
-          author={Wentian Zhao and Xinxiao Wu and Jiebo Luo},\n\
+        "25":"@article{zhao2021cross,\n\
           title={Cross-Domain Image Captioning via Cross-Modal Retrieval and Model Adaptation}, \n\
+          author={Wentian Zhao and Xinxiao Wu and Jiebo Luo},\n\
           journal={IEEE Transactions on Image Processing}, \n\
           year={2021},\n\
           volume={30},\n\
