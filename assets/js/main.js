@@ -307,6 +307,14 @@ $(document).ready(function() {
           pages={3970--3984}, \n\
           year={2021}, \n\
           publisher={IEEE} \n\
+        }",
+        "28":"@article{wu2021spatial,\n\
+          title={Spatial--Temporal Relation Reasoning for Action Prediction in Videos},\n\
+          author={Wu, Xinxiao and Wang, Ruiqi and Hou, Jingyi and Lin, Hanxi and Luo, Jiebo},\n\
+          journal={International Journal of Computer Vision},\n\
+          pages={1--22},\n\
+          year={2021},\n\
+          publisher={Springer}\n\
         }"
         };
 
