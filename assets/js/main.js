@@ -321,6 +321,12 @@ $(document).ready(function() {
           author={Wentian Zhao and Xinxiao Wu and Jiebo Luo,\n\
           booktitle={Neural Information Processing Systems 2021},\n\
           year={2021},\n\
+        }",
+        "30":"@article{chen2022image,\n\
+          title={Adaptive Image-to-video Scene Graph Generation via Knowledge Reasoning and Adversarial Learning},\n\
+          author={Jin Chen, Xiaofeng Ji, Xinxiao Wu,\n\
+          booktitle={The Thirty-Sixth {AAAI} Conference on Artificial Intelligence, {AAAI} 2022},\n\
+          year={2022},\n\
         }"
         };
 
