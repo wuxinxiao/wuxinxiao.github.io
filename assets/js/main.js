@@ -327,6 +327,13 @@ $(document).ready(function() {
           author={Jin Chen, Xiaofeng Ji, Xinxiao Wu,\n\
           booktitle={The Thirty-Sixth {AAAI} Conference on Artificial Intelligence, {AAAI} 2022},\n\
           year={2022},\n\
+        }",
+        "31":"@article{lin2022adaptive,\n\
+          title={Adaptive Recursive Circle Framework for Fine-grained Action Recognition},\n\
+          author={Hanxi Lin, Wentian Zhao, Xinxiao Wu},\n\
+          booktitle={2022 IEEE International Conference on Multimedia and Expo (ICME)},\n\
+          year={2022},\n\
+          organization={IEEE}\n\
         }"
         };
 
