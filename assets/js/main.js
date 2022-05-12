@@ -334,6 +334,12 @@ $(document).ready(function() {
           booktitle={2022 IEEE International Conference on Multimedia and Expo (ICME)},\n\
           year={2022},\n\
           organization={IEEE}\n\
+        }",
+        "32":"@article{lin2022adaptive,\n\
+          title={Entity-aware and Motion-aware Transformers for Language-driven Action Localization in Videos},\n\
+          author={Shuo Yang, Xinxiao Wu},\n\
+          booktitle={2022 International Joint Conference on Artificial Intelligence (IJCAI)},\n\
+          year={2022}\n\
         }"
         };
 
