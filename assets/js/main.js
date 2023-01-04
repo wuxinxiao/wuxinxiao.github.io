@@ -340,6 +340,23 @@ $(document).ready(function() {
           author={Shuo Yang, Xinxiao Wu},\n\
           booktitle={2022 International Joint Conference on Artificial Intelligence (IJCAI)},\n\
           year={2022}\n\
+        }",
+        "33":"@article{wu2022learning,\n\
+          title={Learning Cooperative Neural Modules for Stylized Image Captioning},\n\
+          author={Wu, Xinxiao and Zhao, Wentian and Luo, Jiebo},\n\
+          journal={International Journal of Computer Vision},\n\
+          volume={130},\n\
+          number={9},\n\
+          pages={2305--2320},\n\
+          year={2022},\n\
+          publisher={Springer}\n\
+        }",
+        "34":"@article{tian2022adaptive,\n\
+          title={Adaptive Latent Graph Representation Learning for Image-Text Matching},\n\
+          author={Tian, Mengxiao and Wu, Xinxiao and Jia, Yunde},\n\
+          journal={IEEE Transactions on Image Processing},\n\
+          year={2022},\n\
+          publisher={IEEE}\n\
         }"
         };
 
