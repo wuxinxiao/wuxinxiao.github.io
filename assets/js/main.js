@@ -344,7 +344,7 @@ $(document).ready(function() {
         "33":"@article{wu2022learning,\n\
           title={Learning Cooperative Neural Modules for Stylized Image Captioning},\n\
           author={Wu, Xinxiao and Zhao, Wentian and Luo, Jiebo},\n\
-          journal={International Journal of Computer Vision},\n\
+          journal={International Journal of Computer Vision (IJCV)},\n\
           volume={130},\n\
           number={9},\n\
           pages={2305--2320},\n\
@@ -354,8 +354,15 @@ $(document).ready(function() {
         "34":"@article{tian2022adaptive,\n\
           title={Adaptive Latent Graph Representation Learning for Image-Text Matching},\n\
           author={Tian, Mengxiao and Wu, Xinxiao and Jia, Yunde},\n\
-          journal={IEEE Transactions on Image Processing},\n\
+          journal={IEEE Transactions on Image Processing (TIP)},\n\
           year={2022},\n\
+          publisher={IEEE}\n\
+        }",
+        "35":"@article{chen2022meta,\n\
+          title={Meta-causal Learning for Single Domain Generalization},\n\
+          author={Jin Chen, Zhi Gao, Xinxiao Wu, Jiebo Luo},\n\
+          journal={IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},\n\
+          year={2023},\n\
           publisher={IEEE}\n\
         }"
         };
