@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>词云示例</title>
+    <script type="text/javascript" src="assets/js/wordcloud2.js"></script>
+</head>
+<body>
+    <div>
+        <textarea id="textInput" rows="5" cols="50" placeholder="输入文本"></textarea>
+        <button onclick="generateWordCloud()">生成词云</button>
+    </div>
+    
+    <div id="wordcloud"></div>
+
+    <script>
+        function generateWordCloud() {
+            var textInput = document.getElementById('textInput').value;
+            
+            // 将文本拆分为单词数组
+            var words = textInput.split(/\s+/);
+
+            // 创建词云数据
+            var wordcloudData = [];
+            words.forEach(function(word) {
+                wordcloudData.push({ text: word, weight: 1 });
+            });
+
+            // 设置词云选项
+            var wordcloudOptions = {
+                list: wordcloudData,
+                color: 'random-light',
+                fontFamily: 'Arial, sans-serif',
+                weightFactor: 2,
+                gridSize: 8,
+                rotateRatio: 0.5,
+                backgroundColor: '#fff',
+                drawOutOfBound: false,
+                origin: null // 默认居中显示
+            };
+
+            // 生成词云
+            WordCloud(document.getElementById('wordcloud'), wordcloudOptions);
+        }
+    </script>
+</body>
+</html>
