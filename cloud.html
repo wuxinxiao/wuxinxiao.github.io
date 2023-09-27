@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>动态词云示例</title>
+  <!-- Meta -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="shortcut icon" href="">
+  <link
+      href='https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic'
+      rel='stylesheet' type='text/css'>
+  <!-- Global CSS -->
+  <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+  <!-- m CSS -->
+  <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
+  <link rel="stylesheet" href="assets/plugins/viewer.min.css">
+  <!-- Theme CSS -->
+  <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-cloud/1.2.7/d3.layout.cloud.js"></script>
+
+  <style>
+    .word-cloud {
+      font-family: Arial, sans-serif;
+      cursor: pointer;
+      transition: font-size 0.2s ease-in-out;
+    }
+    .bold-word {
+      font-weight: bold; /* 设置字体加粗 */
+    }
+  </style>
+</head>
+<body>
+    <section id="ResearchInterests-section" class="contact-section section">
+        <h2 class="section-title">研究方向</h2>
+        <div id="word-cloud" class="dialog" style="text-align:center"></div>
+        <!-- <div class="dialog" style="text-align:center">
+			<td style="width: 199px; font-family: Helvetica,Arial,sans-serif;">
+			<font size="+1" color="#00A7BE">
+				<big><span style="font-weight: bold;">人工智能</span></big>&nbsp;&nbsp;
+				视频定位&nbsp;
+				<big style="font-weight: bold;">计算机视觉</big>&nbsp;&nbsp;<br>
+				<span>视觉描述生成</span>&nbsp;&nbsp;
+				<big><span style="font-weight: bold;">视觉和语言</span></big>&nbsp;
+				<small>视频风格迁移</small>&nbsp;&nbsp;<br>
+				<small>动物交互分析</small>&nbsp;人体动作识别&nbsp;&nbsp;
+				<small><big><span style="font-weight: bold;">迁移学习&nbsp;</span></big></small><br>
+				<span style="font-weight: bold;">领域自适应</span>&nbsp;&nbsp; 
+				<small> 跨域目标检测 </small>
+				<span style="font-weight: bold;">领域泛化</span>&nbsp;<br>
+				<small>视频摘要生成</small>&nbsp;
+				<span style="font-weight: bold;">多模态视频分析理解</span>&nbsp;&nbsp;				
+				<small>视觉故事生成</small> <br>&nbsp;
+			</font>
+          </td>
+		</div> -->
+    </section><!--//section-->
+
+  <script>
+    // 词云数据（词语、大小、旋转角度、颜色、链接）
+    var wordCloudData = [
+      { text: "动物交互分析", size: 20, color:"#00A7BE", rotation: 90, link: "https://www.example.com/1", x:-15, y:20, isBold: false},
+      { text: "计算机视觉", size: 40, color:"#00A7BE", rotation: 0, link: "https://www.example.com/1", x:0, y:0, isBold: true },
+      { text: "人体动作识别", size: 25, color:"#00A7BE", rotation: 0, link: "https://www.example.com/2", x:-30, y:-80, isBold: true},
+      { text: "视觉描述生成", size: 20, color:"#00A7BE", rotation: 0, link: "https://www.example.com/1", x:20, y:40, isBold: true },
+      { text: "多模态视频分析理解", size: 30, color:"#00A7BE", rotation: 0, link: "https://www.example.com/3", x:-10, y:100,isBold: false},
+      { text: "人工智能", size: 30, color:"#00A7BE", rotation: 90, link: "https://www.example.com/1", x:20, y:-10, isBold: false }
+      // 添加更多词汇数据
+    ];
+
+    // // 定义颜色
+    // var color = d3.scale.category20();
+  
+    // 创建词云容器
+    var wordCloudContainer = d3.select("#word-cloud");
+  
+    // 创建词云生成器
+    var cloudLayout = d3.layout.cloud()
+      .size([400, 250]) // 设置词云的宽度和高度
+      .words(wordCloudData)
+      .padding(5)
+      .rotate(function(d) { return d.rotation; }) // 旋转角度
+      .fontSize(function(d) { return d.size; })
+      .on("end", draw);
+  
+    // 生成词云
+    cloudLayout.start();
+  
+    // 绘制词云
+    function draw(words) {
+      wordCloudContainer
+        .append("svg")
+        .attr("width", cloudLayout.size()[0])
+        .attr("height", cloudLayout.size()[1])
+        .append("g")
+        .attr("transform", "translate(" + cloudLayout.size()[0] / 2 + "," + cloudLayout.size()[1] / 2 + ")")
+        .selectAll("text")
+        .data(words)
+        .enter()
+        .append("text")
+        .attr("class", "word-cloud")
+        .style("font-size", function(d) { return d.size + "px"; })
+        .style("fill", function(d) { return d.color; })
+        .style("cursor", "pointer")
+        .attr("text-anchor", "middle")
+        .attr("transform", function(d) {
+          return "translate(" +[d.x, d.y] + ") rotate(" + d.rotate + ")";
+        })
+        .text(function(d) { return d.text; })
+        .on("mouseover", function(d) {
+          d3.select(this)
+            .transition()
+            .duration(200)
+            .style("font-size", function(d) { return (d.size + 10) + "px"; });
+        })
+        .on("mouseout", function(d) {
+          d3.select(this)
+            .transition()
+            .duration(200)
+            .style("font-size", function(d) { return d.size + "px"; });
+        })
+        .on("click", function(d) {
+          window.open(d.link, "_blank");
+        });
+    }
+  </script>
+  
+</body>
+</html>

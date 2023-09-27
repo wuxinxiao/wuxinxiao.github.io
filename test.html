@@ -1,47 +1,89 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
-    <title>词云示例</title>
-    <script type="text/javascript" src="assets/js/wordcloud2.js"></script>
+    <title>动态词云示例</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-cloud/1.2.7/d3.layout.cloud.js"></script>
+    <style>
+        .word-cloud {
+            font-family: Arial, sans-serif;
+            cursor: pointer;
+        }
+    </style>
 </head>
+
 <body>
-    <div>
-        <textarea id="textInput" rows="5" cols="50" placeholder="输入文本"></textarea>
-        <button onclick="generateWordCloud()">生成词云</button>
-    </div>
-    
-    <div id="wordcloud"></div>
+    <div id="word-cloud"></div>
 
     <script>
-        function generateWordCloud() {
-            var textInput = document.getElementById('textInput').value;
-            
-            // 将文本拆分为单词数组
-            var words = textInput.split(/\s+/);
+        // 词云数据（词语、权重）
+        var wordCloudData = [
+            { text: "词汇1", size: 20 },
+            { text: "词汇2", size: 16 },
+            { text: "词汇3", size: 25 },
+            // 添加更多词汇数据
+        ];
 
-            // 创建词云数据
-            var wordcloudData = [];
-            words.forEach(function(word) {
-                wordcloudData.push({ text: word, weight: 1 });
-            });
+        // 创建词云容器
+        var wordCloudContainer = d3.select("#word-cloud");
 
-            // 设置词云选项
-            var wordcloudOptions = {
-                list: wordcloudData,
-                color: 'random-light',
-                fontFamily: 'Arial, sans-serif',
-                weightFactor: 2,
-                gridSize: 8,
-                rotateRatio: 0.5,
-                backgroundColor: '#fff',
-                drawOutOfBound: false,
-                origin: null // 默认居中显示
-            };
+        // 创建词云生成器
+        var layout = d3.layout.cloud()
+            .size([500, 300]) // 设置词云的宽度和高度
+            .words(wordCloudData.map(function (d) {
+                return { text: d.text, size: d.size };
+            }))
+            .padding(5)
+            .rotate(function () { return 0; }) // 旋转角度
+            .fontSize(function (d) { return d.size; })
+            .on("end", draw);
 
-            // 生成词云
-            WordCloud(document.getElementById('wordcloud'), wordcloudOptions);
+        // 生成词云
+        layout.start();
+
+        // 绘制词云
+        function draw(words) {
+            wordCloudContainer
+                .append("svg")
+                .attr("width", layout.size()[0])
+                .attr("height", layout.size()[1])
+                .append("g")
+                .attr("transform", "translate(" + layout.size()[0] / 2 + "," + layout.size()[1] / 2 + ")")
+                .selectAll("text")
+                .data(words)
+                .enter()
+                .append("text")
+                .attr("class", "word-cloud")
+                .style("font-size", function (d) { return d.size + "px"; })
+                .style("fill", "blue") // 设置词语颜色
+                .attr("text-anchor", "middle")
+                .attr("transform", function (d) {
+                    return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
+                })
+                .text(function (d) { return d.text; });
         }
+
+        // 添加放大效果和链接
+        layout.on("mouseover", function (d) {
+            d3.select(this)
+                .transition()
+                .duration(200)
+                .style("font-size", function (d) { return (d.size + 20) + "px"; });
+        });
+
+        layout.on("mouseout", function (d) {
+            d3.select(this)
+                .transition()
+                .duration(200)
+                .style("font-size", function (d) { return d.size + "px"; });
+        });
+
+        layout.on("click", function (d) {
+            window.open(d.link, "_blank");
+        });
     </script>
 </body>
+
 </html>

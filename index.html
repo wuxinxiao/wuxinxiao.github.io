@@ -19,6 +19,20 @@
 <link rel="stylesheet" href="assets/plugins/viewer.min.css">
 <!-- Theme CSS -->  
 <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+<!-- wordcloud-js -->
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-cloud/1.2.7/d3.layout.cloud.js"></script>
+
+<style>
+    .word-cloud {
+      font-family: Arial, sans-serif;
+      cursor: pointer;
+      transition: font-size 0.2s ease-in-out;
+    }
+    .bold-word {
+      font-weight: bold; /* 设置字体加粗 */
+    }
+  </style>
 
 </head> 
 
@@ -119,6 +133,7 @@
 
 	<section id="ResearchInterests-section" class="contact-section section">
 		<h2 class="section-title">研究方向</h2>
+		<!-- <div id="word-cloud" class="dialog" style="text-align:center"></div> -->
 		<div class="dialog" style="text-align:center">
 			<td style="width: 199px; font-family: Helvetica,Arial,sans-serif;">
 			<font size="+1" color="#00A7BE">
@@ -168,7 +183,7 @@
 					</figure>
 					<div class="content text-left">
 						<h3 class="sub-title"><a>Boosting Entity-aware Image Captioning with Multi-modal Knowledge Graph.</a></h3>
-						<div class="meta">Wentian Zhao, Yao Hu, Heda Wang, Xinxiao Wu, Jiebo Luo.</div>
+						<div class="meta">Wentian Zhao, Xinxiao Wu.</div>
 						<div class="action">IEEE Transactions on Multimedia (TMM), 2023</div>
 						<div class="link">
 							<a href="assets/papers/2023/Boosting Entity-aware.pdf">[PDF]</a>
@@ -1093,7 +1108,76 @@
 <script type="text/javascript" src="assets/js/main.js"></script>
 
 <!-- Style Switcher (REMOVE ON YOUR PRODUCTION SITE) -->
-<script src="assets/js/demo/style-switcher.js"></script>     
+<script src="assets/js/demo/style-switcher.js"></script>
+
+<script>
+    // 词云数据（词语、大小、旋转角度、颜色、链接）
+    var wordCloudData = [
+      { text: "动物交互分析", size: 20, color:"#00A7BE", rotation: 90, link: "https://www.example.com/1", x:-15, y:20, isBold: false},
+      { text: "计算机视觉", size: 40, color:"#00A7BE", rotation: 0, link: "https://www.example.com/1", x:0, y:0, isBold: true },
+      { text: "人体动作识别", size: 25, color:"#00A7BE", rotation: 0, link: "https://www.example.com/2", x:-30, y:-80, isBold: true},
+      { text: "视觉描述生成", size: 20, color:"#00A7BE", rotation: 0, link: "https://www.example.com/1", x:20, y:40, isBold: true },
+      { text: "多模态视频分析理解", size: 30, color:"#00A7BE", rotation: 0, link: "https://www.example.com/3", x:-10, y:100,isBold: false},
+      { text: "人工智能", size: 30, color:"#00A7BE", rotation: 90, link: "https://www.example.com/1", x:20, y:-10, isBold: false }
+      // 添加更多词汇数据
+    ];
+
+    // // 定义颜色
+    // var color = d3.scale.category20();
+  
+    // 创建词云容器
+    var wordCloudContainer = d3.select("#word-cloud");
+  
+    // 创建词云生成器
+    var cloudLayout = d3.layout.cloud()
+      .size([400, 250]) // 设置词云的宽度和高度
+      .words(wordCloudData)
+      .padding(5)
+      .rotate(function(d) { return d.rotation; }) // 旋转角度
+      .fontSize(function(d) { return d.size; })
+      .on("end", draw);
+  
+    // 生成词云
+    cloudLayout.start();
+  
+    // 绘制词云
+    function draw(words) {
+      wordCloudContainer
+        .append("svg")
+        .attr("width", cloudLayout.size()[0])
+        .attr("height", cloudLayout.size()[1])
+        .append("g")
+        .attr("transform", "translate(" + cloudLayout.size()[0] / 2 + "," + cloudLayout.size()[1] / 2 + ")")
+        .selectAll("text")
+        .data(words)
+        .enter()
+        .append("text")
+        .attr("class", "word-cloud")
+        .style("font-size", function(d) { return d.size + "px"; })
+        .style("fill", function(d) { return d.color; })
+        .style("cursor", "pointer")
+        .attr("text-anchor", "middle")
+        .attr("transform", function(d) {
+          return "translate(" +[d.x, d.y] + ") rotate(" + d.rotate + ")";
+        })
+        .text(function(d) { return d.text; })
+        .on("mouseover", function(d) {
+          d3.select(this)
+            .transition()
+            .duration(200)
+            .style("font-size", function(d) { return (d.size + 10) + "px"; });
+        })
+        .on("mouseout", function(d) {
+          d3.select(this)
+            .transition()
+            .duration(200)
+            .style("font-size", function(d) { return d.size + "px"; });
+        })
+        .on("click", function(d) {
+          window.open(d.link, "_blank");
+        });
+    }
+  </script>
 
 </body>
 </html>
