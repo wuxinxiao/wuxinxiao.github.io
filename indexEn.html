@@ -93,7 +93,7 @@
 				</ul>
 			</div><!--//diaplog-->
 			<div style="text-align: center; margin-top: 2rem;">
-				<a href="javascript:void(0)" id="load-more" onclick="loadMoreNews()">---- More News ----</a>
+				<a href="javascript:void(0)" id="load-more" class="btn-load-more" onclick="loadMoreNews()">More News</a>
 			</div>
 		</div><!--//news-intro-->
 	</section><!--//section-->
@@ -104,18 +104,21 @@
 			<td style="width: 199px; font-family: Helvetica,Arial,sans-serif;">
 			<font size="+1" color="#00A7BE">
 				<big><span style="font-weight: bold;">Artificial Intelligence</span></big>&nbsp;&nbsp;
-				<span> visual captioning</span><br>&nbsp;
-				video grounding&nbsp;&nbsp;
-				<big style="font-weight: bold;">Computer Vision</big><br>&nbsp;
-				<big><span style="font-weight: bold;">Vision+Language</span></big>&nbsp;&nbsp;
-				<small>video style transfer</small><br>&nbsp;&nbsp;
-				<small>animal interaction analysis</small>&nbsp;human action recognition<br>&nbsp;
-				<span style="font-weight: bold;">domain adpatation</span>&nbsp;&nbsp; 
-				<span style="font-weight: bold;">domain generalization</span><br>&nbsp;&nbsp;
-				<small>video summarization &amp; visual storytelling</small> <br>&nbsp;
-				<span style="font-weight: bold;">Multimedia Video Analysis and Undestanding</span><br>&nbsp;&nbsp;
-				<small><big><span style="font-weight: bold;">Transfer Learning&nbsp;</span></big></small>&nbsp;
-				<small> cross-domain object detection </small><br>
+				Video Grounding&nbsp;
+				<big style="font-weight: bold;">Computer Vision</big>&nbsp;&nbsp;<br>
+				<span>Visual Captioning</span>&nbsp;&nbsp;
+				<big><span style="font-weight: bold;">Multimodal Reasoning</span></big>&nbsp;&nbsp;<small>Human Action Recognition</small>&nbsp;&nbsp;<br>
+				<!-- <small>Video Style Transfer</small>&nbsp;&nbsp; -->
+				<!-- <small>Animal Interaction Analysis</small> -->
+				<small><big><span style="font-weight: bold;">Incremental Learning&nbsp;</span></big></small>
+				<span style="font-weight: bold;">Domain Adaptation</span>&nbsp;&nbsp; 
+				<!-- <small> Cross-domain Object Detection </small> -->
+				<span style="font-weight: bold;">Domain Generalization</span>&nbsp;<br>
+				<small>Video Summarization</small>&nbsp;
+				<span style="font-weight: bold;">Video Understanding</span>&nbsp;&nbsp;Video Relation Detection	
+				<!-- <small>Visual Storytelling</small>  -->
+                <br>&nbsp;
+                <big><span style="font-weight: bold;">Embodied AI</span></big>&nbsp;&nbsp;Intelligent Agents
 			</font>
           </td>
 	</section><!--//section-->
@@ -127,7 +130,7 @@
 			<!-- Journal items will be loaded from assets/js/site-data.js -->
 		</div><!-- item-wrapper-journal-->
 		<div style="text-align: center;">
-			<a href="javascript:void(0)" id="load-more-items" onclick="loadMoreJournalItems()">---- More Journal Article ----</a>
+			<a href="javascript:void(0)" id="load-more-items" class="btn-load-more" onclick="loadMoreJournalItems()">More Journal Article</a>
 		</div><!--//item-wrapper-->
 		<h3 style="text-align: center;font-size: 22px; color: #00BCD4; margin-top: 3.0rem; margin-bottom: 2.0rem;">Conference</h3>
 		<div class="items-wrapper-paper isotope row" id="items-wrapper" style="height: auto;">
@@ -135,7 +138,7 @@
 		</div><!--//item-wrapper-->
 		
 		<div style="text-align: center;">
-			<a href="javascript:void(0)" id="load-more-items" onclick="loadMorePaperItems()">---- More Conference Paper ----</a>
+			<a href="javascript:void(0)" id="load-more-items" class="btn-load-more" onclick="loadMorePaperItems()">More Conference Paper</a>
 		</div>
 		
 	</section><!--//section-->
@@ -161,7 +164,7 @@
 		</div><!--//row-->
 		
 		<div style="text-align: center;">
-			<a href="javascript:void(0)" id="load-more-group" onclick="loadMoreGroup()">---- More Alumni ----</a>
+			<a href="javascript:void(0)" id="load-more-group" class="btn-load-more" onclick="loadMoreGroup()">More Alumni</a>
 		</div>	
 	</section><!--//section-->
 
@@ -293,9 +296,9 @@
         let conferenceHtml = '';
 
         paperData.forEach((paper, index) => {
-            let codeLink = paper.code ? `<a href="${paper.code}">[CODE]</a>` : '';
-            let bibtexLink = `<a data-toggle="modal" data-target="#citeModal" data-whatever="${index}">[BibTeX]</a>`;
-            let pdfLink = paper.pdf ? `<a href="${paper.pdf}">[PDF]</a>` : '';
+            let codeLink = paper.code ? `<a href="${paper.code}" class="btn-paper-link"><i class="fa fa-code"></i>Code</a>` : '';
+            let bibtexLink = `<a data-toggle="modal" data-target="#citeModal" data-whatever="${index}" class="btn-paper-link"><i class="fa fa-quote-left"></i>BibTeX</a>`;
+            let pdfLink = paper.pdf ? `<a href="${paper.pdf}" class="btn-paper-link"><i class="fa fa-file-pdf-o"></i>PDF</a>` : '';
             
             // Use the first image as main image and data-original
             let imgPath = paper.img;
@@ -304,7 +307,7 @@
             <div class="item col-md-12 col-xs-12 ">
                 <div class="item-inner">
                     <figure class="figure">
-                        <img class="img-responsive" src="${imgPath}" data-original="${imgPath}" alt="" />
+                        <img class="img-responsive" src="${imgPath}" data-original="${imgPath}" alt="" style="width: 100%; height: 100%;" />
                     </figure>
                     <div class="content text-left">
                         <h3 class="sub-title"><a>${paper.title}</a></h3>

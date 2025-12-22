@@ -108,7 +108,7 @@
 				</ul>
 			</div><!--//diaplog-->
 			<div style="text-align: center; margin-top: 2rem;">
-				<a href="javascript:void(0)" id="load-more" onclick="loadMoreNews()">---- 更多新闻 ----</a>
+				<a href="javascript:void(0)" id="load-more" class="btn-load-more" onclick="loadMoreNews()">更多新闻</a>
 			</div>
 			<!-- <p id="load-more" class="text-center" style="cursor: pointer; color: #00BCD4;">————— 点击查看更多 ——————</p> -->
 		</div><!--//news-intro-->
@@ -148,7 +148,7 @@
 			<!-- Journal items will be loaded from assets/js/site-data.js -->
 		</div><!-- item-wrapper-journal-->
 		<div style="text-align: center;">
-			<a href="javascript:void(0)" id="load-more-items" onclick="loadMoreJournalItems()">---- 更多期刊文章 ----</a>
+			<a href="javascript:void(0)" id="load-more-items" class="btn-load-more" onclick="loadMoreJournalItems()">更多期刊文章</a>
 		</div><!--//item-wrapper-->
 		<h3 style="text-align: center;font-size: 22px; color: #00BCD4; margin-top: 3.0rem; margin-bottom: 2.0rem;">会议论文</h3>
 		<div class="items-wrapper-paper isotope row" id="items-wrapper" style="height: auto;">
@@ -156,7 +156,7 @@
 		</div><!--//item-wrapper-->
 		
 		<div style="text-align: center;">
-			<a href="javascript:void(0)" id="load-more-items" onclick="loadMorePaperItems()">---- 更多会议论文 ----</a>
+			<a href="javascript:void(0)" id="load-more-items" class="btn-load-more" onclick="loadMorePaperItems()">更多会议论文</a>
 		</div>
 		
 	</section><!--//section-->		
@@ -181,7 +181,7 @@
 		</div><!--//row-->
 		
 		<div style="text-align: center;">
-			<a href="javascript:void(0)" id="load-more-group" onclick="loadMoreGroup()">---- 更多毕业生 ----</a>
+			<a href="javascript:void(0)" id="load-more-group" class="btn-load-more" onclick="loadMoreGroup()">更多毕业生</a>
 		</div>
 	</section><!--//section-->
 
@@ -296,9 +296,9 @@
         let conferenceHtml = '';
 
         paperData.forEach((paper, index) => {
-            let codeLink = paper.code ? `<a href="${paper.code}">[CODE]</a>` : '';
-            let bibtexLink = `<a data-toggle="modal" data-target="#citeModal" data-whatever="${index}">[BibTeX]</a>`;
-            let pdfLink = paper.pdf ? `<a href="${paper.pdf}">[PDF]</a>` : '';
+            let codeLink = paper.code ? `<a href="${paper.code}" class="btn-paper-link"><i class="fa fa-code"></i>Code</a>` : '';
+            let bibtexLink = `<a data-toggle="modal" data-target="#citeModal" data-whatever="${index}" class="btn-paper-link"><i class="fa fa-quote-left"></i>BibTeX</a>`;
+            let pdfLink = paper.pdf ? `<a href="${paper.pdf}" class="btn-paper-link"><i class="fa fa-file-pdf-o"></i>PDF</a>` : '';
             
             // Use the first image as main image and data-original
             let imgPath = paper.img;
@@ -307,7 +307,7 @@
             <div class="item col-md-12 col-xs-12 ">
                 <div class="item-inner">
                     <figure class="figure">
-                        <img class="img-responsive" src="${imgPath}" data-original="${imgPath}" alt="" />
+                        <img class="img-responsive" src="${imgPath}" data-original="${imgPath}" alt="" style="width: 100%; height: 100%;" />
                     </figure>
                     <div class="content text-left">
                         <h3 class="sub-title"><a>${paper.title}</a></h3>
