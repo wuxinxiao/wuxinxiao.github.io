@@ -1,4 +1,10 @@
 const newsDataEn = [
+    { date: "2025-11-08", content: "Yayun Qi's paper “What to Trust? A Trust-aware Knowledge-guided Method for Zero-shot Object State Understanding in Videos” was accepted by The 40th AAAI Conference on Artificial Intelligence (AAAI2026) as Oral Paper. Congratulations!" },
+    { date: "2025-11-08", content: "Zirui Shang's paper “TongUI: Internet-Scale Trajectories from Multimodal Web Tutorials for Generalized GUI Agents” was accepted by The 40th AAAI Conference on Artificial Intelligence (AAAI2026). Congratulations!" },
+    { date: "2025-11-03", content: "Jun Chen, Yilin Cheng, Rongjiang Zhu, and Chunxi Tian won the third prize at the 19th Challenge Cup National College Student Extracurricular Academic Science and Technology Works Competition! Congratulations!" },
+    { date: "2025-10-10", content: "Yayun Qi, Wentian Zhao, and Tong Li's paper “结合常识知识的无监督情感化图像描述生成” was accepted by《计算机学报》. Congratulations!" },
+    { date: "2025-07-31", content: "Hongxi Li, Yubo Zhu, Zirui Shang, and Ziyi Wang's paper “A Comprehensive Survey on Video Summarization: Challenges and Advances” was accepted by IEEE Transactions on Circuits and Systems for Video Technology (TCSVT). Congratulations!" },
+    { date: "2025-07-07", content: "Ziyi Wang and Jin Chen's paper “Simulate, Refocus and Ensemble: An Attention Refocusing Scheme for Domain Generalization” was accepted by IEEE Transactions on Multimedia (TMM). Congratulations!" },
     { date: "2025-06-26", content: "Mengxiao Tian's paper “LLM-enhanced Action-aware Multi-modal Prompt Tuning for Image-Text Matching” was accepted by International Conference on Computer Vision (ICCV2025). Congratulations!" },
     { date: "2025-06-24", content: "Ziyi Wang's paper “Domain Adaptive Video Summarization using Generalized Transformer” was accepted by Pattern Recognition (PR). Congratulations!" },
     { date: "2025-05-03", content: "Yayun Qi, Hongxi Li, and Yiqi Song's paper “How Vision-Language Tasks Benefit from Large Pre-trained Models: A Survey” was accepted by IEEE Transactions on Multimedia (TMM). Congratulations!" },

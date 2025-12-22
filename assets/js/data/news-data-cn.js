@@ -1,4 +1,11 @@
 const newsDataCn = [
+    // { date: "", content: "" },
+    { date: "2025-11-08", content: "齐雅昀论文“What to Trust? A Trust-aware Knowledge-guided Method for Zero-shot Object State Understanding in Videos”被The 40th AAAI Conference on Artificial Intelligence (AAAI2026) 录用为Oral论文，祝贺雅昀！" },
+    { date: "2025-11-08", content: "尚子睿论文“TongUI: Internet-Scale Trajectories from Multimodal Web Tutorials for Generalized GUI Agents” 被The 40th AAAI Conference on Artificial Intelligence (AAAI2026) 录用，祝贺子睿！" },
+    { date: "2025-11-03", content: "陈军、成易林、朱荣江、田纯溪等获得第十九届“挑战杯”全国大学生课外学术科技作品竞赛全国三等奖！祝贺陈军、易林、荣江和纯溪！" },
+    { date: "2025-10-10", content: "齐雅昀、赵文天和李彤论文“结合常识知识的无监督情感化图像描述生成”被《计算机学报》录用，祝贺雅昀、文天和李彤！" },
+    { date: "2025-07-31", content: "李鸿熙、朱宇博、尚子睿和王子奕论文“A Comprehensive Survey on Video Summarization: Challenges and Advances”被IEEE Transactions on Circuits and Systems for Video Technology（TCSVT）录用，祝贺鸿熙、宇博、子睿和子奕!" },
+    { date: "2025-07-07", content: "王子奕和陈谨论文“Simulate, Refocus and Ensemble: An Attention Refocusing Scheme for Domain Generalization”被IEEE Transactions on Multimedia (TMM)录用，祝贺子奕和陈谨！" },
     { date: "2025-06-26", content: "田孟潇论文“LLM-enhanced Action-aware Multi-modal Prompt Tuning for Image-Text Matching”被International Conference on Computer Vision (ICCV2025) 录用，祝贺孟潇！" },
     { date: "2025-06-24", content: "王子奕论文“Domain Adaptive Video Summarization using Generalized Transformer”被Pattern Recognition (PR) 录用，祝贺子奕！" },
     { date: "2025-05-03", content: "齐雅昀、李鸿熙和宋奕圻论文“How Vision-Language Tasks Benefit from Large Pre-trained Models: A Survey”被IEEE Transactions on Multimedia (TMM) 录用，祝贺雅昀、鸿熙和奕圻！" },

@@ -33,6 +33,22 @@ const stuData = [
         "degreeEN": "phD student"
     },
     {
+        "name": "朱荣江",
+        "degree": "博士生",
+        "area": "3D Grounding",
+        "img": "assets/images/group/zhurongjiang.jpg",
+        "nameEN": "Zhu Rongjiang",
+        "degreeEN": "phD student"
+    },
+    {
+        "name": "谭云腾",
+        "degree": "博士生",
+        "area": "LLM-based agents",
+        "img": "assets/images/group/tanyunteng.jpg",
+        "nameEN": "Tan Yunteng",
+        "degreeEN": "phD student"
+    },
+    {
         "name": "王泳棋",
         "degree": "硕士生",
         "area": "video relation detection",
@@ -49,19 +65,35 @@ const stuData = [
         "degreeEN": "MS student"
     },
     {
-        "name": "朱荣江",
+        "name": "陈宇阳",
         "degree": "硕士生",
-        "area": "video action recognition",
-        "img": "assets/images/group/zhurongjiang.jpg",
-        "nameEN": "Zhu Rongjiang",
+        "area": "counterfactual image understanding",
+        "img": "assets/images/group/chenyuyang.jpg",
+        "nameEN": "Chen Yuyang",
         "degreeEN": "MS student"
     },
     {
-        "name": "谭云腾",
+        "name": "成易林",
         "degree": "硕士生",
-        "area": "LLM-based agents",
-        "img": "assets/images/group/tanyunteng.jpg",
-        "nameEN": "Tan Yunteng",
+        "area": "video relationship detection",
+        "img": "assets/images/group/chengyilin.jpg",
+        "nameEN": "Cheng Yilin",
         "degreeEN": "MS student"
-    }
+    },
+    {
+        "name": "郭富嘉",
+        "degree": "硕士生",
+        "area": "streaming video understanding",
+        "img": "assets/images/group/guofujia.jpg",
+        "nameEN": "Guo Fujia",
+        "degreeEN": "MS student"
+    },
+    // {
+    //     "name": "",
+    //     "degree": "",
+    //     "area": "",
+    //     "img": "",
+    //     "nameEN": "",
+    //     "degreeEN": "MS student/phD student"
+    // },
 ];
