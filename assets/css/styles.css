@@ -1312,6 +1312,13 @@ a.btn:hover {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
+.btn-load-more:visited,
+.btn-load-more:focus {
+    color: #4DD0E1;
+    background-color: #fff;
+    text-decoration: none;
+}
+
 .btn-load-more:hover {
     background-color: #4DD0E1;
     color: #fff;
