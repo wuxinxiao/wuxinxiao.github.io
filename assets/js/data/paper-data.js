@@ -11,6 +11,26 @@ const paperData = [
     //     bibtex: ``
     // },
     {
+        type: 'journal',
+        title: "结合常识知识的无监督情感化图像描述生成",
+        authors: "齐雅昀，赵文天，李彤，吴心筱",
+        venue: "计算机学报, 2025",
+        img: "assets/images/portfolio/portfolio-53.png",
+        pdf: "assets/papers/2025/计算机学报_结合常识知识的无监督情感化图像描述生成.pdf",
+        code: "",
+        bibtex: `@article{JSJX202512002,
+      author = {  齐雅昀 and     赵文天 and     李彤 and 吴心筱},
+      title = {结合常识知识的无监督情感化图像描述生成},
+      journal = {计算机学报},
+      volume = {48},
+      number = {12},
+      pages = {2809-2822},
+      year = {2025},
+      issn = {0254-4164},
+      }    
+      `
+    },
+    {
         type: 'conference',
         title: "Video Summarization using Denoising Diffusion Probabilistic Model",
         authors: "Zirui Shang, Yubo Zhu, Hongxi Li, Shuo Yang, Xinxiao Wu.",
