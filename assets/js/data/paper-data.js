@@ -83,7 +83,7 @@ const paperData = [
         type: 'journal',
         title: "A Comprehensive Survey on Video Summarization: Challenges and Advances",
         authors: "Hongxi Li, Yubo Zhu, Zirui Shang, Ziyi Wang, Xinxiao Wu.",
-        venue: "IEEE Transactions on Multimedia (TMM), 2025",
+        venue: "IEEE Transactions on Circuits and Systems for Video Technology (TCSVT), 2025",
         img: "assets/images/portfolio/portfolio-48.png",
         pdf: "assets/papers/2025/TMM_A_Comprehensive_Survey_on_Video_Summarization_Challenges_and_Advances.pdf",
         code: "",
