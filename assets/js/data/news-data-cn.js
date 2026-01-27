@@ -1,5 +1,6 @@
 const newsDataCn = [
     // { date: "", content: "" },
+    { date: "2026-01-26", content: "王子奕论文“VUDG: A Dataset for Video Understanding Domain Generalization”被The 14th International Conference on Learning Representations (ICLR2026) 录用，祝贺子奕！" },
     { date: "2025-11-08", content: "齐雅昀论文“What to Trust? A Trust-aware Knowledge-guided Method for Zero-shot Object State Understanding in Videos”被The 40th AAAI Conference on Artificial Intelligence (AAAI2026) 录用为Oral论文，祝贺雅昀！" },
     { date: "2025-11-08", content: "尚子睿论文“TongUI: Internet-Scale Trajectories from Multimodal Web Tutorials for Generalized GUI Agents” 被The 40th AAAI Conference on Artificial Intelligence (AAAI2026) 录用，祝贺子睿！" },
     { date: "2025-11-03", content: "陈军、成易林、朱荣江、田纯溪等获得第十九届“挑战杯”全国大学生课外学术科技作品竞赛全国三等奖！祝贺陈军、易林、荣江和纯溪！" },

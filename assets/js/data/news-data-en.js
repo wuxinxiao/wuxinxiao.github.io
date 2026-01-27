@@ -1,4 +1,5 @@
 const newsDataEn = [
+    { date: "2026-01-26", content: "Ziyi Wang's paper “VUDG: A Dataset for Video Understanding Domain Generalization” was accepted by The 14th International Conference on Learning Representations (ICLR2026). Congratulations!" },
     { date: "2025-11-08", content: "Yayun Qi's paper “What to Trust? A Trust-aware Knowledge-guided Method for Zero-shot Object State Understanding in Videos” was accepted by The 40th AAAI Conference on Artificial Intelligence (AAAI2026) as Oral Paper. Congratulations!" },
     { date: "2025-11-08", content: "Zirui Shang's paper “TongUI: Internet-Scale Trajectories from Multimodal Web Tutorials for Generalized GUI Agents” was accepted by The 40th AAAI Conference on Artificial Intelligence (AAAI2026). Congratulations!" },
     { date: "2025-11-03", content: "Jun Chen, Yilin Cheng, Rongjiang Zhu, and Chunxi Tian won the third prize at the 19th Challenge Cup National College Student Extracurricular Academic Science and Technology Works Competition! Congratulations!" },
