@@ -11,6 +11,23 @@ const paperData = [
     //     bibtex: ``
     // },
     {
+        type: 'conference',
+        title: "VUDG: A Dataset for Video Understanding Domain Generalization",
+        authors: "Ziyi Wang, Zhi Gao, Boxuan Yu, Zirui Dai, Yuxiang Song, Qingyuan Lu, Jin Chen, Xinxiao Wu.",
+        venue: "International Conference on Learning Representations (ICLR), 2026",
+        img: "assets/images/portfolio/portfolio-54.png",
+        pdf: "assets/papers/2026/VUDG_camera_ready.pdf",
+        code: "https://vudg-video.github.io",
+        bibtex: `@inproceedings{
+wang2026vudg,
+title={{VUDG}: A Dataset for Video Understanding Domain Generalization},
+author={Ziyi Wang and Zhi Gao and Boxuan Yu and Zirui Dai and Peiyao Wang and Yuxiang Song and Qingyuan Lu and Jin Chen and Xinxiao Wu},
+booktitle={The Fourteenth International Conference on Learning Representations},
+year={2026},
+url={https://openreview.net/forum?id=0mUiXz1TNq}
+}`
+    },
+    {
         type: 'journal',
         title: "结合常识知识的无监督情感化图像描述生成",
         authors: "齐雅昀，赵文天，李彤，吴心筱",
