@@ -59,6 +59,7 @@
 				<ul id="page-nav" class="nav page-nav list-inline">
 					<li><a class="scrollto" href="#ResearchInterests-section">Research Interests</a></li>
 					<li><a class="scrollto" href="#SelectedPublications-section">Selected Publications</a></li>
+					<li><a class="scrollto" href="#ProjectPages-section">Project Pages</a></li>
 					<li><a class="scrollto" href="#Group-section">Group</a></li>
 					<li><a class="scrollto" href="#Eudcation-section">Teaching</a></li>
 				</ul><!--//page-nav-->
@@ -138,6 +139,13 @@
 			<a href="javascript:void(0)" id="load-more-items" class="btn-load-more" onclick="loadMorePaperItems()">More Conference Paper</a>
 		</div>
 		
+	</section><!--//section-->
+
+	<section id="ProjectPages-section" class="project-section section">
+		<h2 class="section-title">Project Pages</h2>
+		<div class="project-cards-grid" id="project-cards-grid">
+			<!-- Projects will be loaded from assets/js/data/project.js -->
+		</div>
 	</section><!--//section-->
 
 	<section id="Group-section" class="group-section section">
@@ -238,6 +246,7 @@
 
 <!-- custom js -->
 <script type="text/javascript" src="assets/js/main.js"></script>
+<script src="assets/js/data/project.js"></script>
 <script src="assets/js/data/stu-data.js"></script>
 <script src="assets/js/data/grad-stu-data.js"></script>
 
@@ -442,6 +451,30 @@
         }
         
         window.loadGroup(); // Initial call
+    }
+</script>
+
+<script>
+    // Render Projects
+    const projectGrid = document.getElementById('project-cards-grid');
+    if (projectGrid && typeof projectData !== 'undefined') {
+        let html = '';
+        const isEn = (typeof window.isEnglish !== 'undefined' && window.isEnglish);
+        projectData.forEach(proj => {
+            const name = isEn ? proj.nameEn : proj.name;
+            const desc = isEn ? proj.descriptionEn : proj.description;
+            html += `
+            <div class="project-card-wrap">
+                <a class="project-card" href="${proj.url}" target="_blank" rel="noopener noreferrer">
+                    <img class="pc-bg" src="${proj.bg}" alt="${name}">
+                    <div class="pc-glass">
+                        <h3 class="pc-title">${name}</h3>
+                        <p class="pc-desc">${desc}</p>
+                    </div>
+                </a>
+            </div>`;
+        });
+        projectGrid.innerHTML = html;
     }
 </script>
 

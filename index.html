@@ -74,6 +74,7 @@
 				<ul id="page-nav" class="nav page-nav list-inline">
 					<li><a class="scrollto" href="#ResearchInterests-section">研究方向</a></li>
 					<li><a class="scrollto" href="#SelectedPublications-section">代表性论文</a></li>
+					<li><a class="scrollto" href="#ProjectPages-section">项目主页</a></li>
 					<li><a class="scrollto" href="#Group-section">研究生小伙伴</a></li>
 					<li><a class="scrollto" href="#Eudcation-section">教学内容</a></li>
 				</ul><!--//page-nav-->
@@ -157,7 +158,14 @@
 		</div>
 		
 	</section><!--//section-->		
-	
+
+	<section id="ProjectPages-section" class="project-section section">
+		<h2 class="section-title">项目主页</h2>
+		<div class="project-cards-grid" id="project-cards-grid">
+			<!-- Projects will be loaded from assets/js/data/project.js -->
+		</div>
+	</section><!--//section-->
+
 	<section id="Group-section" class="group-section section">
 		<h2 class="section-title">研究生小伙伴</h2>
 		<div class="items-wrapper row" id="student-list" style="display: flex; flex-wrap: wrap;">
@@ -264,6 +272,7 @@
 <script src="assets/js/data/news-data-cn.js"></script>
 <script src="assets/js/data/news-data-en.js"></script>
 <script src="assets/js/data/paper-data.js"></script>
+<script src="assets/js/data/project.js"></script>
 <script src="assets/js/data/stu-data.js"></script>
 <script src="assets/js/data/grad-stu-data.js"></script>
 
@@ -552,6 +561,30 @@
         });
     }
   </script>
+
+<script>
+    // Render Projects
+    const projectGrid = document.getElementById('project-cards-grid');
+    if (projectGrid && typeof projectData !== 'undefined') {
+        let html = '';
+        const isEn = (typeof window.isEnglish !== 'undefined' && window.isEnglish);
+        projectData.forEach(proj => {
+            const name = isEn ? proj.nameEn : proj.name;
+            const desc = isEn ? proj.descriptionEn : proj.description;
+            html += `
+            <div class="project-card-wrap">
+                <a class="project-card" href="${proj.url}" target="_blank" rel="noopener noreferrer">
+                    <img class="pc-bg" src="${proj.bg}" alt="${name}">
+                    <div class="pc-glass">
+                        <h3 class="pc-title">${name}</h3>
+                        <p class="pc-desc">${desc}</p>
+                    </div>
+                </a>
+            </div>`;
+        });
+        projectGrid.innerHTML = html;
+    }
+</script>
 
 </body>
 </html>
