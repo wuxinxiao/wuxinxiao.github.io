@@ -1,5 +1,6 @@
 const newsDataCn = [
     // { date: "", content: "" },
+    { date: "2026-05-18", content: "陈宇阳论文“Challenging and Enhancing the Reasoning Capacity of Multimodal LLMs in Context-violating Images”被Pattern Recognition (PR) 录用，祝贺宇阳！" },
     { date: "2026-05-01", content: "朱荣江论文“AmbiRefer3D: 3D Visual Grounding with Referential Ambiguity”被The 43rd International Conference on Machine Learning (ICML2026) 录用，祝贺荣江！" },
     { date: "2026-01-26", content: "王子奕论文“VUDG: A Dataset for Video Understanding Domain Generalization”被The 14th International Conference on Learning Representations (ICLR2026) 录用，祝贺子奕！" },
     { date: "2025-11-08", content: "齐雅昀论文“What to Trust? A Trust-aware Knowledge-guided Method for Zero-shot Object State Understanding in Videos”被The 40th AAAI Conference on Artificial Intelligence (AAAI2026) 录用为Oral论文，祝贺雅昀！" },
