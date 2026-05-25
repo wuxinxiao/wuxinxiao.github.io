@@ -1,6 +1,6 @@
 const newsDataEn = [
-    { date: "2026-05-18", content: "Yuyang Chen's paper “Challenging and Enhancing the Reasoning Capacity of Multimodal LLMs in Context-violating Images” was accepted by Pattern Recognition (PR). Congratulations!" },
-    { date: "2026-05-01", content: "Rongjiang Zhu's paper “AmbiRefer3D: 3D Visual Grounding with Referential Ambiguity” was accepted by The 43rd International Conference on Machine Learning (ICML2026). Congratulations!" },
+    { date: "2026-05-18", content: "Yuyang Chen and Hongxi Li's paper “Challenging and Enhancing the Reasoning Capacity of Multimodal LLMs in Context-violating Images” was accepted by Pattern Recognition (PR). Congratulations!" },
+    { date: "2026-05-01", content: "Rongjiang Zhu and Zeqi Liu's paper “AmbiRefer3D: 3D Visual Grounding with Referential Ambiguity” was accepted by The 43rd International Conference on Machine Learning (ICML2026). Congratulations!" },
     { date: "2026-01-26", content: "Ziyi Wang's paper “VUDG: A Dataset for Video Understanding Domain Generalization” was accepted by The 14th International Conference on Learning Representations (ICLR2026). Congratulations!" },
     { date: "2025-11-08", content: "Yayun Qi's paper “What to Trust? A Trust-aware Knowledge-guided Method for Zero-shot Object State Understanding in Videos” was accepted by The 40th AAAI Conference on Artificial Intelligence (AAAI2026) as Oral Paper. Congratulations!" },
     { date: "2025-11-08", content: "Zirui Shang's paper “TongUI: Internet-Scale Trajectories from Multimodal Web Tutorials for Generalized GUI Agents” was accepted by The 40th AAAI Conference on Artificial Intelligence (AAAI2026). Congratulations!" },
