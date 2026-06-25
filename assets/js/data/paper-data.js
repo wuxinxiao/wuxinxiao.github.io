@@ -8,6 +8,7 @@ const paperData = [
     //     img: "",
     //     pdf: "",
     //     code: "",
+    //     site: "",
     //     bibtex: ``
     // },
     {

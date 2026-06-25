@@ -816,6 +816,14 @@ a.btn:hover {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+.group-section .item-inner .content .action {
+  font-size: 13px;
+  color: #888;
+  min-height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .alumni-section .filters {
   list-style: none;

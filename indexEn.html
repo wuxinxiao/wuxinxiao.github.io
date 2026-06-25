@@ -303,6 +303,7 @@
 
         paperData.forEach((paper, index) => {
             let codeLink = paper.code ? `<a href="${paper.code}" class="btn-paper-link"><i class="fa fa-code"></i>Code</a>` : '';
+            let siteLink = paper.site ? `<a href="${paper.site}" class="btn-paper-link"><i class="fa fa-globe"></i>Project Page</a>` : '';
             let bibtexLink = `<a data-toggle="modal" data-target="#citeModal" data-whatever="${index}" class="btn-paper-link"><i class="fa fa-quote-left"></i>BibTeX</a>`;
             let pdfLink = paper.pdf ? `<a href="${paper.pdf}" class="btn-paper-link"><i class="fa fa-file-pdf-o"></i>PDF</a>` : '';
             
@@ -322,6 +323,7 @@
                         <div class="link">
                             ${pdfLink}
                             ${codeLink}
+                            ${siteLink}
                             ${bibtexLink}
                         </div>
                     </div>    					              

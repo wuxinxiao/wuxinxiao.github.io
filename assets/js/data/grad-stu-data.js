@@ -2,6 +2,12 @@
 const gradData = {
     "phd": [
         {
+            "name": "齐雅昀",
+            "destination": "京东 算法工程师",
+            "nameEN": "Qi Yayun",
+            "destinationEN": "JD.com Algorithm Engineer"
+        },
+        {
             "name": "田孟潇",
             "destination": "北京农业科学院 师资博士后",
             "nameEN": "Tian Mengxiao",
@@ -21,15 +27,15 @@ const gradData = {
         },
         {
             "name": "赵文天",
-            "destination": "北京理工大学 博士后",
+            "destination": "北京理工大学 助理教授",
             "nameEN": "Zhao Wentian",
-            "destinationEN": "Beijing Institute of Technology PostPhD"
+            "destinationEN": "Beijing Institute of Technology Assistant Professor"
         },
         {
             "name": "王晗",
-            "destination": "北京林业大学 副教授",
+            "destination": "北京林业大学 教授",
             "nameEN": "Wang Han",
-            "destinationEN": "Beijing Forestry University Associate Professor"
+            "destinationEN": "Beijing Forestry University Professor"
         },
         {
             "name": "宋浩",
@@ -39,12 +45,24 @@ const gradData = {
         },
         {
             "name": "侯静怡",
-            "destination": "北京科技大学 师资博士后",
+            "destination": "北京科技大学 讲师",
             "nameEN": "Hou Jingyi",
-            "destinationEN": "Beijing University of Science and Technology PostPhD studental Teaching Fellow"
+            "destinationEN": "Beijing University of Science and Technology Lecturer"
         }
     ],
     "master": [
+        {
+            "name": "王泳棋",
+            "destination": "字节跳动 算法工程师",
+            "nameEN": "Wang Yongqi",
+            "destinationEN": "ByteDance Algorithm Engineer"
+        },
+        {
+            "name": "王子奕",
+            "destination": "国家电网 算法工程师",
+            "nameEN": "Wang Ziyi",
+            "destinationEN": "STATE GRID Corporation of China Algorithm Engineer"
+        },
         {
             "name": "李鸿熙",
             "destination": "美图影像研究院 CV算法工程师",

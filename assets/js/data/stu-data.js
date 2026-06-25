@@ -1,14 +1,6 @@
 // Current Students Data
 const stuData = [
     {
-        "name": "齐雅昀",
-        "degree": "博士生",
-        "area": "video caption",
-        "img": "assets/images/group/qiyayun.jpg",
-        "nameEN": "Qi Yayun",
-        "degreeEN": "phD student"
-    },
-    {
         "name": "陈军",
         "degree": "博士生",
         "area": "incremental learning",
@@ -47,22 +39,6 @@ const stuData = [
         "img": "assets/images/group/tanyunteng.jpg",
         "nameEN": "Tan Yunteng",
         "degreeEN": "phD student"
-    },
-    {
-        "name": "王泳棋",
-        "degree": "硕士生",
-        "area": "video relation detection",
-        "img": "assets/images/group/wangyongqi.jpg",
-        "nameEN": "Wang Yongqi",
-        "degreeEN": "MS student"
-    },
-    {
-        "name": "王子奕",
-        "degree": "硕士生",
-        "area": "domain generalization",
-        "img": "assets/images/group/wangziyi.jpg",
-        "nameEN": "Wang Ziyi",
-        "degreeEN": "MS student"
     },
     {
         "name": "陈宇阳",
