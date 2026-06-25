@@ -3,26 +3,26 @@ const stuData = [
     {
         "name": "陈军",
         "degree": "博士生",
-        "area": "incremental learning",
+        "area": "Incremental Learning",
         "img": "assets/images/group/chenjun.jpg",
         "nameEN": "Chen Jun",
-        "degreeEN": "phD student"
+        "degreeEN": "PhD student"
     },
     {
         "name": "尚子睿",
         "degree": "博士生",
-        "area": "video grounding",
+        "area": "Video Grounding",
         "img": "assets/images/group/shangzirui.jpg",
         "nameEN": "Shang Zirui",
-        "degreeEN": "phD student"
+        "degreeEN": "PhD student"
     },
     {
         "name": "宋奕圻",
         "degree": "博士生",
-        "area": "multimodal reasoning",
+        "area": "Multimodal Reasoning",
         "img": "assets/images/group/songyiqi.jpg",
         "nameEN": "Song Yiqi",
-        "degreeEN": "phD student"
+        "degreeEN": "PhD student"
     },
     {
         "name": "朱荣江",
@@ -30,20 +30,28 @@ const stuData = [
         "area": "3D Grounding",
         "img": "assets/images/group/zhurongjiang.jpg",
         "nameEN": "Zhu Rongjiang",
-        "degreeEN": "phD student"
+        "degreeEN": "PhD student"
     },
     {
         "name": "谭云腾",
         "degree": "博士生",
-        "area": "LLM-based agents",
+        "area": "LLM-based Agents",
         "img": "assets/images/group/tanyunteng.jpg",
         "nameEN": "Tan Yunteng",
-        "degreeEN": "phD student"
+        "degreeEN": "PhD student"
+    },
+    {
+        "name": "刘雨晗",
+        "degree": "博士生",
+        "area": "Embodied Intelligence",
+        "img": "assets/images/group/liuyuhan.jpg",
+        "nameEN": "Liu Yuhan",
+        "degreeEN": "PhD student"
     },
     {
         "name": "陈宇阳",
         "degree": "硕士生",
-        "area": "counterfactual image understanding",
+        "area": "Counterfactual Image Understanding",
         "img": "assets/images/group/chenyuyang.jpg",
         "nameEN": "Chen Yuyang",
         "degreeEN": "MS student"
@@ -51,7 +59,7 @@ const stuData = [
     {
         "name": "成易林",
         "degree": "硕士生",
-        "area": "video relationship detection",
+        "area": "Video Relationship Detection",
         "img": "assets/images/group/chengyilin.jpg",
         "nameEN": "Cheng Yilin",
         "degreeEN": "MS student"
@@ -59,7 +67,7 @@ const stuData = [
     {
         "name": "郭富嘉",
         "degree": "硕士生",
-        "area": "streaming video understanding",
+        "area": "Streaming Video Understanding",
         "img": "assets/images/group/guofujia.jpg",
         "nameEN": "Guo Fujia",
         "degreeEN": "MS student"
@@ -70,6 +78,6 @@ const stuData = [
     //     "area": "",
     //     "img": "",
     //     "nameEN": "",
-    //     "degreeEN": "MS student/phD student"
+    //     "degreeEN": "MS student/PhD student"
     // },
 ];
