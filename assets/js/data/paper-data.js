@@ -34,7 +34,7 @@ const paperData = [
         venue: "International Conference on Learning Representations (ICLR), 2026",
         img: "assets/images/portfolio/portfolio-54.png",
         pdf: "assets/papers/2026/VUDG_camera_ready.pdf",
-        code: "",
+        code: "https://github.com/VUDG-Video/VUDG",
         site: "https://vudg-video.github.io/",
         bibtex: `@inproceedings{
 wang2026vudg,
