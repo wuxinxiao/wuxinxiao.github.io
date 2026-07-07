@@ -14,5 +14,13 @@ const projectData = [
         descriptionEn: "Open-Vocabulary Video Visual Relationship Detection",
         bg: "assets/images/project/ov.png",
         url: "https://wangyongqi558.github.io"
+    },
+    {
+        name: "三维语义定位",
+        nameEn: "3D Visual Grounding",
+        description: "AmbiRefer3D: 3D Visual Grounding with Referential Ambiguity",
+        descriptionEn: "AmbiRefer3D: 3D Visual Grounding with Referential Ambiguity",
+        bg: "assets/images/project/ambirefer3d.jpg",
+        url: "https://yearnallover.github.io/ambirefer/"
     }
 ];

@@ -11,7 +11,7 @@ const stuData = [
     {
         "name": "尚子睿",
         "degree": "博士生",
-        "area": "Video Grounding",
+        "area": "GUI Agent",
         "img": "assets/images/group/shangzirui.jpg",
         "nameEN": "Shang Zirui",
         "degreeEN": "PhD student"
@@ -35,7 +35,7 @@ const stuData = [
     {
         "name": "谭云腾",
         "degree": "博士生",
-        "area": "LLM-based Agents",
+        "area": "LLM Agent",
         "img": "assets/images/group/tanyunteng.jpg",
         "nameEN": "Tan Yunteng",
         "degreeEN": "PhD student"
@@ -51,7 +51,7 @@ const stuData = [
     {
         "name": "陈宇阳",
         "degree": "硕士生",
-        "area": "Counterfactual Image Understanding",
+        "area": "Image Editing Agent",
         "img": "assets/images/group/chenyuyang.jpg",
         "nameEN": "Chen Yuyang",
         "degreeEN": "MS student"

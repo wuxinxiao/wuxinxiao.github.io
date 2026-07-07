@@ -13,12 +13,29 @@ const paperData = [
     // },
     {
         type: 'conference',
+        title: "AmbiRefer3D: 3D Visual Grounding with Referential Ambiguity",
+        authors: "Rongjiang Zhu, Wei Kang, Zeqi Liu, Junyu Chen, Shuo Yang, Xinxiao Wu.",
+        venue: "International Conference on Machine Learning (ICML), 2026",
+        img: "assets/images/project/ambirefer3d.jpg",
+        pdf: "assets/papers/2026/ambirefer3d-paper.pdf",
+        code: "https://github.com/yearnallover/AmbiRefer3D",
+        site: "https://yearnallover.github.io/ambirefer/",
+        bibtex: `@inproceedings{zhu2026ambirefer3d,
+  title = {AmbiRefer3D: 3D Visual Grounding with Referential Ambiguity},
+  author = {Zhu, Rongjiang and Kang, Wei and Liu, Zeqi and Chen, Junyu and Yang, Shuo and Wu, Xinxiao},
+  booktitle = {Proceedings of the 43rd International Conference on Machine Learning},
+  year = {2026}
+}`
+    },
+    {
+        type: 'conference',
         title: "VUDG: A Dataset for Video Understanding Domain Generalization",
         authors: "Ziyi Wang, Zhi Gao, Boxuan Yu, Zirui Dai, Yuxiang Song, Qingyuan Lu, Jin Chen, Xinxiao Wu.",
         venue: "International Conference on Learning Representations (ICLR), 2026",
         img: "assets/images/portfolio/portfolio-54.png",
         pdf: "assets/papers/2026/VUDG_camera_ready.pdf",
-        code: "https://vudg-video.github.io",
+        code: "",
+        site: "https://vudg-video.github.io/",
         bibtex: `@inproceedings{
 wang2026vudg,
 title={{VUDG}: A Dataset for Video Understanding Domain Generalization},
@@ -155,6 +172,7 @@ url={https://openreview.net/forum?id=0mUiXz1TNq}
         img: "assets/images/portfolio/portfolio-44.jpg",
         pdf: "assets/papers/2025/TPAMI_End_to_end_Open_vocabulary_Video_Visual_Relationship_Detection_using_Multi_modal_Prompting.pdf",
         code: "https://github.com/wangyongqi558/EOV-MMP-VidVRD",
+        site: "https://wangyongqi558.github.io/",
         bibtex: ``
     },
     {
@@ -530,6 +548,7 @@ url={https://openreview.net/forum?id=0mUiXz1TNq}
         img: "assets/images/portfolio/portfolio-45.jpg",
         pdf: "assets/papers/2025/IJCAI_METOR.pdf",
         code: "",
+        site: "https://wangyongqi558.github.io/",
         bibtex: ``
     },
     {
@@ -550,6 +569,7 @@ url={https://openreview.net/forum?id=0mUiXz1TNq}
         img: "assets/images/portfolio/portfolio-40.jpg",
         pdf: "assets/papers/2024/AAAI_2024_open_vocabulary_video_relationship_detection.pdf",
         code: "https://github.com/wangyongqi558/MMP_OV_VidVRD",
+        site: "https://wangyongqi558.github.io/",
         bibtex: ``
     },
     {

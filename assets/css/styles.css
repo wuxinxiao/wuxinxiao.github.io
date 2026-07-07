@@ -218,6 +218,113 @@ a.btn:hover {
 .header .contact-info li:last-child {
   margin-right: 0;
 }
+
+.research-cloud {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px 18px;
+  max-width: 860px;
+  min-height: 250px;
+  margin: 0 auto;
+  padding: 34px 28px;
+  border: 1px solid rgba(0, 143, 161, 0.18);
+  border-radius: 8px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.98), rgba(240, 249, 250, 0.98));
+  overflow: hidden;
+}
+
+.research-cloud:before {
+  content: "";
+  position: absolute;
+  inset: 18px;
+  border: 1px dashed rgba(0, 143, 161, 0.18);
+  border-radius: 8px;
+  pointer-events: none;
+}
+
+.research-chip {
+  --chip-bg: #f1fbfd;
+  --chip-color: #007888;
+  --chip-ring: rgba(0, 188, 212, 0.2);
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  min-height: 38px;
+  padding: 8px 15px;
+  border-radius: 8px;
+  color: var(--chip-color);
+  background: var(--chip-bg);
+  border: 1px solid var(--chip-ring);
+  box-shadow: 0 7px 16px rgba(0, 120, 136, 0.08);
+  line-height: 1.2;
+  transform-origin: center;
+  animation: cloudFloat 6s ease-in-out infinite;
+  transition: transform 0.22s ease, box-shadow 0.22s ease, color 0.22s ease, background 0.22s ease;
+}
+
+.research-chip:hover {
+  transform: translateY(-4px) scale(1.14);
+  color: #fff;
+  background: var(--chip-color);
+  box-shadow: 0 14px 28px rgba(0, 120, 136, 0.2);
+  z-index: 2;
+}
+
+.research-chip:focus {
+  outline: 2px solid #00BCD4;
+  outline-offset: 3px;
+}
+
+.research-chip.chip-link {
+  cursor: pointer;
+}
+
+.chip-xl {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.chip-lg {
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.chip-md {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.chip-sm {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.chip-a { --chip-bg: #e7f9fb; --chip-color: #007888; --chip-ring: rgba(0, 120, 136, 0.24); animation-delay: 0s; }
+.chip-b { --chip-bg: #eef8f9; --chip-color: #008fa1; --chip-ring: rgba(0, 143, 161, 0.22); animation-delay: -1.3s; }
+.chip-c { --chip-bg: #f3fbfc; --chip-color: #006d7b; --chip-ring: rgba(0, 109, 123, 0.2); animation-delay: -2.2s; }
+.chip-d { --chip-bg: #e9f8f1; --chip-color: #287862; --chip-ring: rgba(40, 120, 98, 0.22); animation-delay: -0.6s; }
+.chip-e { --chip-bg: #f7fbfc; --chip-color: #1e6f82; --chip-ring: rgba(30, 111, 130, 0.22); animation-delay: -2.8s; }
+.chip-f { --chip-bg: #eff7fa; --chip-color: #356f85; --chip-ring: rgba(53, 111, 133, 0.2); animation-delay: -1.8s; }
+.chip-g { --chip-bg: #e9fbff; --chip-color: #008fa1; --chip-ring: rgba(0, 143, 161, 0.22); animation-delay: -3.4s; }
+.chip-h { --chip-bg: #f5faf9; --chip-color: #486f73; --chip-ring: rgba(72, 111, 115, 0.18); animation-delay: -0.9s; }
+.chip-i { --chip-bg: #f0fafb; --chip-color: #317c88; --chip-ring: rgba(49, 124, 136, 0.18); animation-delay: -2.5s; }
+.chip-j { --chip-bg: #f5fbfc; --chip-color: #518088; --chip-ring: rgba(81, 128, 136, 0.18); animation-delay: -1.1s; }
+.chip-k { --chip-bg: #eef9fc; --chip-color: #2f728d; --chip-ring: rgba(47, 114, 141, 0.18); animation-delay: -3.1s; }
+.chip-l { --chip-bg: #f7fbfc; --chip-color: #5c7f86; --chip-ring: rgba(92, 127, 134, 0.18); animation-delay: -1.7s; }
+.chip-m { --chip-bg: #f3faf9; --chip-color: #547b74; --chip-ring: rgba(84, 123, 116, 0.18); animation-delay: -2.9s; }
+
+@keyframes cloudFloat {
+  0%, 100% {
+    translate: 0 0;
+  }
+  50% {
+    translate: 0 -8px;
+  }
+}
 .header .contact-info li .fa {
   margin-right: 10px;
 }
@@ -1484,17 +1591,16 @@ a.btn:hover {
 /* =======================================
    Project Pages Section (.project-section)
    Style: Frosted Glass | 16:9 aspect ratio
-   Cards: 2-per-row desktop, 1-per-row mobile
+   Cards: 3-per-row desktop, 1-per-row mobile
 ======================================= */
 .project-section .project-cards-grid {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 24px;
     margin-top: 4px;
 }
 
 .project-card-wrap {
-    flex: 1 1 calc(50% - 12px);
     min-width: 280px;
 }
 
@@ -1587,8 +1693,18 @@ a.btn:hover {
     max-height: 100px;
 }
 
+@media (max-width: 991px) {
+    .project-section .project-cards-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
 @media (max-width: 767px) {
+    .project-section .project-cards-grid {
+        grid-template-columns: 1fr;
+    }
+
     .project-card-wrap {
-        flex: 1 1 100%;
+        min-width: 0;
     }
 }
