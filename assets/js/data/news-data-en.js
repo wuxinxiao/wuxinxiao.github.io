@@ -1,4 +1,5 @@
 const newsDataEn = [
+    { date: "2026-09-30", content: "Zirui Shang's paper “LLM-powered Query Expansion for Enhancing Boundary Prediction in Language-driven Action Localization” was accepted by International Journal of Computer Vision (IJCV). Congratulations!" },
     { date: "2026-05-18", content: "Yuyang Chen and Hongxi Li's paper “Challenging and Enhancing the Reasoning Capacity of Multimodal LLMs in Context-violating Images” was accepted by Pattern Recognition (PR). Congratulations!" },
     { date: "2026-05-01", content: "Rongjiang Zhu and Zeqi Liu's paper “AmbiRefer3D: 3D Visual Grounding with Referential Ambiguity” was accepted by The 43rd International Conference on Machine Learning (ICML2026). Congratulations!" },
     { date: "2026-01-26", content: "Ziyi Wang's paper “VUDG: A Dataset for Video Understanding Domain Generalization” was accepted by The 14th International Conference on Learning Representations (ICLR2026). Congratulations!" },

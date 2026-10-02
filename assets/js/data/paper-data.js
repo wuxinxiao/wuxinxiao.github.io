@@ -1,5 +1,21 @@
 const paperData = [
     // --- Journal Papers ---
+    {
+        type: 'journal',
+        title: "LLM-powered Query Expansion for Enhancing Boundary Prediction in Language-driven Action Localization",
+        authors: "Zirui Shang, Xinxiao Wu, Shuo Yang.",
+        venue: "International Journal of Computer Vision (IJCV), 2026",
+        img: "assets/images/project/ijcv-llm-query-expansion.png",
+        pdf: "assets/papers/2026/IJCV_LLM_Query_Expansion.pdf",
+        code: "",
+        bibtex: `@article{shang2026llm,
+      title={LLM-powered Query Expansion for Enhancing Boundary Prediction in Language-driven Action Localization},
+      author={Shang, Zirui and Wu, Xinxiao and Yang, Shuo},
+      journal={International Journal of Computer Vision},
+      year={2026},
+      note={Accepted for publication}
+      }`
+    },
     // {
     //     type: 'journal',
     //     title: "",
